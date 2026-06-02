@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Nocturne';
+    src: url(./assets/NocturneSerif-Regular.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nocturne';
 }
 
 ::-webkit-scrollbar {
@@ -41,14 +47,14 @@ body {
 }
 
 .main-card h1 {
-    font-size: 40px;
+    font-size: 44px;
     color: #fff;
     margin: 8px;
     margin-top: 0;
 }
 
 .main-card p {
-    font-size: 20px;
+    font-size: 19px;
     margin: 8px;
     color: #fff;
     margin-bottom: 0;
@@ -98,6 +104,7 @@ body {
     height: 320px;
     border-radius: 32px;
     margin: 4px;
+    box-shadow: 0 0 15px 2px #000;
 }
 
 .artworks a button {
@@ -136,7 +143,7 @@ body {
     justify-content: center;
     background: radial-gradient(circle, #000, #6f0f13);
     border-radius: 25px;
-    box-shadow: 0px 0px 15px 2px #000; 
+    box-shadow: 0 0 15px 2px #000;
 }
 
 .sticker img {
@@ -146,7 +153,7 @@ body {
 /************************************ DESCRIPTION ************************************/
 
 .description {
-    margin: 80px 0;
+    margin: 50px 0;
 }
 
 .description .card {
@@ -156,9 +163,10 @@ body {
     width: 380px;
     background-color: #270706;
     margin: 20px 0;
-    padding: 10px;
+    padding: 12px;
     color: #fff;
     border-radius: 24px;
+    box-shadow: 0 0 15px 1px #000;
 }
 
 .description .card:nth-child(2) {
@@ -177,7 +185,7 @@ body {
 }
 
 .description .card .description-img img {
-    height: 80px;
+    height: 90px;
     margin: 5px 10px;
 }
 
@@ -188,4 +196,9 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 4px;
+}
+
+.description .card .description-text h3 {
+    letter-spacing: 1.5px;
 }
