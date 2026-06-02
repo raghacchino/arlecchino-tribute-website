@@ -22,7 +22,7 @@ body {
 
 .section-below {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /************************************ MAIN CARD ************************************/
@@ -85,8 +85,8 @@ body {
 /************************************ ARTWORKS ************************************/
 
 .artworks {
-    margin: 50px;
-    width: 440px;
+    margin: 50px 0;
+    /* width: 440px; */
 }
 
 .artworks h2 {
@@ -95,12 +95,12 @@ body {
 }
 
 .artworks img {
-    height: 350px;
+    height: 320px;
     border-radius: 32px;
     margin: 4px;
 }
 
-.artworks button {
+.artworks a button {
     width: 90%;
     height: 60px;
     background: linear-gradient(to bottom, #4f0810, #270706);
@@ -111,10 +111,11 @@ body {
     justify-self: center;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    cursor: pointer;
 }
 
-.artworks button a {
-    color: #fff;
+.artworks a {
     text-decoration: none;
 }
 
@@ -126,8 +127,8 @@ body {
 }
 
 .sticker {
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     /* border: 1px solid #000; */
     margin: 20px 10px;
     display: flex;
@@ -144,3 +145,47 @@ body {
 
 /************************************ DESCRIPTION ************************************/
 
+.description {
+    margin: 80px 0;
+}
+
+.description .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    background-color: #270706;
+    margin: 20px 0;
+    padding: 10px;
+    color: #fff;
+    border-radius: 24px;
+}
+
+.description .card:nth-child(2) {
+    background-color: #4f0810;
+}
+
+.description .card:nth-child(3) {
+    background-color: #6f0f13;
+}
+
+.description .card .description-img {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description .card .description-img img {
+    height: 80px;
+    margin: 5px 10px;
+}
+
+.description .card .description-text {
+    width: 75%;
+    height: 100%;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
