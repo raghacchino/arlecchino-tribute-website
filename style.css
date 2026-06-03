@@ -135,7 +135,7 @@ body {
 
 .stickers {
     display: flex;
-    margin: 80px 50px 50px;
+    margin: 100px 50px 50px;
 }
 
 .sticker {
@@ -149,6 +149,40 @@ body {
     background: radial-gradient(circle, #000, #6f0f13);
     border-radius: 25px;
     box-shadow: 0 0 15px 2px #000;
+    position: relative;
+}
+
+.sticker-tooltip {
+    position: absolute;
+    top: 85px;
+    right: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 24px;
+    background: #ffd3d3;
+    border-radius: 50px 0 0 50px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 99999;
+    border: none;
+}
+
+.sticker:hover .sticker-tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sticker-tooltip:hover {
+    cursor: pointer;
+}
+
+.sticker-tooltip:disabled {
+    opacity: 0;
 }
 
 .sticker img {
